@@ -1,0 +1,55 @@
+.title {
+    background-color: var(--mantine-color-gray-1);
+    border: 1px solid var(--mantine-color-gray-3);
+    border-radius: 8px;
+    padding: 12px 8px;
+}
+
+.titleInfo {
+    color: var(--mantine-color-gray-6);
+    font-size: 16;
+}
+
+
+
+.cleintBlackText {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mantine-color-gray-9)
+}
+
+.clientOrder {
+    display: flex;
+
+    padding: 12px 8px;
+    flex-direction: column;
+
+    gap: 4px;
+    border-radius: 12px;
+    border: 1px solid var(--mantine-color-gray-2);
+    background: var(--mantine-color-gray-0);
+}
+
+.clientGrayText {
+    color: var(--mantine-color-gray-6);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.statusDone {
+    padding: 2px 12px;
+    border-radius: 88px;
+    background: rgba(95, 179, 96, 0.10);
+    color: var(--mantine-color-green-0);
+    font-size: 14px;
+    font-weight: 400;
+}
+.statusRejected {
+    padding: 2px 12px;
+    border-radius: 88px;
+    background: rgba(212, 88, 71, 0.10);
+    color: var(--mantine-color-red-0);
+    font-size: 14px;
+    font-weight: 400;
+}

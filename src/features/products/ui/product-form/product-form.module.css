@@ -1,0 +1,54 @@
+.title {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 24px;
+    color: var(--mantine-color-gray-9);
+
+}
+
+.imageBlock {
+    position: relative;
+    width: 100px;
+    height: 100px;
+}
+
+.image {
+    width: 100px;
+    height: 100px;
+}
+
+.resetImage {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    border-radius: 3px;
+    background-color: var(--mantine-color-red-0);
+}
+
+.uploadImage {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--mantine-color-primary-5);
+    text-decoration: underline;
+}
+
+.imageName {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--mantine-color-gray-9);
+    text-decoration: underline;
+}
+
+.button {
+    width: 100%;
+    padding: 12px 16px 16px;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    border-radius: 12px 12px 0px 0px;
+    border-top: 1px solid var(--mantine-color-gray-3);
+    background: var(--mantine-color-gray-1);
+}

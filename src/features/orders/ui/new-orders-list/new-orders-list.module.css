@@ -1,0 +1,41 @@
+.orderProducts {
+  font-size: 16px;
+  font-weight: 600;
+  color: var(--mantine-color-gray-9);
+  display: flex;
+  text-decoration: none;
+}
+
+.clientInfo {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  align-self: stretch;
+}
+
+.clientPhone {
+  color: var(--mantine-color-primary-5);
+  font-weight: 400;
+  text-decoration: inherit;
+}
+
+.orderIcon {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin-right: 5px;
+  border-radius: 50%;
+  background-color: var(--mantine-color-red-0);
+}
+.clientAdress {
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--mantine-color-gray-6);
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}

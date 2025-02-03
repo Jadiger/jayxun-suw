@@ -1,0 +1,66 @@
+.openButton {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    align-items: center;
+}
+
+.content {
+    padding-top: 25px;
+    padding-bottom: calc(20px + env(safe-area-inset-bottom));
+    
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.languageLists {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.activeLanguage {
+    background-color: var(--mantine-color-primary-1);
+}
+
+.languageItem {
+    padding: 12px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* background-color: var(--mantine-color-primary-2); */
+}
+
+.languageName {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.languageItem input[type="radio"] {
+    appearance: none;
+
+    width: 16px;
+    height: 16px;
+    border: 2px solid var(--mantine-color-primary-5);
+    border-radius: 50%;
+    outline: none;
+    cursor: pointer;
+    /* position: relative;
+    transform: translateZ(0); */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.languageItem input[type="radio"]:checked::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: var(--mantine-color-primary-5);
+    border-radius: 50%;
+}

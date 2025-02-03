@@ -1,0 +1,12 @@
+.title {
+    color : var(--mantine-color-gray-6);
+    font-size : 14px;
+    line-height: 20px;
+    font-weight: 400;
+}
+.info {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 500;
+    color: var(--mantine-color-gray-9);
+}

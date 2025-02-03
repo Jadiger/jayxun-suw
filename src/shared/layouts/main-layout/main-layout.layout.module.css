@@ -1,0 +1,53 @@
+.root {
+    min-height: 100vh;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--mantine-color-gray-1);
+    
+}
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+    gap: 16px;
+    padding-bottom: 45px;
+}
+.drawerHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+.links {
+    /* margin-top: 12px; */
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    outline: none;
+}
+.link {
+    font-size: 16px;
+    color: var(--mantine-color-gray-6);
+    /* line-height: 16px; */
+    border-radius: 12px;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    gap: 8px;
+    outline: none;
+}
+.linkIcon {
+    width: 20px;
+    height: 20px;
+    display: flex;
+}
+.activeLink {
+    color: #fff;
+    background-color: var(--mantine-color-primary-5);
+
+}

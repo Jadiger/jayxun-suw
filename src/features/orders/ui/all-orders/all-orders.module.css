@@ -1,0 +1,19 @@
+.grayText {
+    color: var(--mantine-color-gray-6);
+    font-family: Inter;
+    font-size: 14px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.status {
+    display: inline-block;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 2px 16px;
+    border-radius: 16px;
+    background: red;
+}

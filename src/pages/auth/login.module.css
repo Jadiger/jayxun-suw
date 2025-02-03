@@ -1,0 +1,15 @@
+.logo {
+    /* width: 48px; */
+    margin-bottom: 75px;
+}
+
+.text {
+    font-size: 14px;
+    color: var(--mantine-color-gray-5);
+    line-height: 20px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+.languageBtn {
+    background-color: #fff;
+}

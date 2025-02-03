@@ -1,0 +1,49 @@
+{
+  "name": "aqua_control",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc -b && vite build",
+    "lint": "eslint .",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@mantine/core": "^7.15.3",
+    "@mantine/dates": "^7.15.3",
+    "@mantine/form": "^7.15.3",
+    "@mantine/hooks": "^7.15.3",
+    "@mantine/modals": "^7.15.3",
+    "@mantine/notifications": "^7.15.3",
+    "@tanstack/react-query": "^5.64.0",
+    "@tanstack/react-query-devtools": "^5.64.0",
+    "axios": "^1.7.9",
+    "dayjs": "^1.11.13",
+    "js-cookie": "^3.0.5",
+    "leaflet": "^1.9.4",
+    "leaflet-routing-machine": "^3.2.12",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-feather": "^2.0.10",
+    "react-leaflet": "^4.2.1",
+    "react-number-format": "^5.4.3",
+    "react-router-dom": "^6.27.0"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.17.0",
+    "@types/js-cookie": "^3.0.6",
+    "@types/leaflet": "^1.9.16",
+    "@types/node": "^22.10.5",
+    "@types/react": "^18.3.18",
+    "@types/react-dom": "^18.3.5",
+    "@vitejs/plugin-react": "^4.3.4",
+    "eslint": "^9.17.0",
+    "eslint-plugin-react-hooks": "^5.0.0",
+    "eslint-plugin-react-refresh": "^0.4.16",
+    "globals": "^15.14.0",
+    "typescript": "~5.6.2",
+    "typescript-eslint": "^8.18.2",
+    "vite": "^6.0.5"
+  }
+}

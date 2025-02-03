@@ -1,0 +1,100 @@
+
+
+
+
+.notId {
+    font-size: 14px;
+    font-weight: 500;;
+    color: var(--mantine-color-red-0);
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.statusRed {
+    width: 10px;
+    height: 10px;
+    background-color: var(--mantine-color-red-0);
+    border-radius: 50%;
+}
+
+.products {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 20px;
+}
+
+
+.product {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid var(--mantine-color-gray-2);
+}
+.productImg {
+    width: 52px;
+
+}
+.productInfo {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.productName {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mantine-color-gray-9);
+    text-transform: capitalize;
+}
+.productPriceInfo {
+    font-size: 14px;
+    font-weight: 400;
+
+}
+.tetxBlack {
+    color: var(--mantine-color-gray-9);
+}
+.textGray {
+    color: var(--mantine-color-gray-6);
+}
+.productPrice {
+    font-size: 16px;
+    font-weight: 500;
+    color: var(--mantine-color-gray-9);
+}
+
+.productPriceDetail {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.productsPriceInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.productsPriceText {
+    font-weight: 400;
+    font-size: 16px;
+    color: var(--mantine-color-gray-5);
+}
+.productsPrice {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--mantine-color-gray-6);
+}
+.carInfo {
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    font-weight: 400;
+    gap: 4px;
+}
+.checkOrder {
+    padding: 12px 0;
+}

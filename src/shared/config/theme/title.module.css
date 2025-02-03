@@ -1,0 +1,68 @@
+.root {
+    color: var(--mantine-color-neutral-9);
+    font-weight: 600;
+
+    &[data-order='1'] {
+        font-size: 36px;
+        line-height: 40px;
+        /* 100% */
+    }
+
+    &[data-order='2'] {
+        font-size: 30px;
+        line-height: 36px;
+        /* 100% */
+    }
+
+    &[data-order='3'] {
+        font-size: 24px;
+        line-height: 32px;
+        /* 100% */
+    }
+
+    &[data-order='4'] {
+        font-size: 20px;
+        line-height: 28px;
+        /* 100% */
+    }
+
+    &[data-order='5'] {
+        font-size: 16px;
+        line-height: 22px;
+        /* 100% */
+    }
+}
+
+@media (min-width: 768px) {
+    .root {
+        &[data-order='1'] {
+            font-size: 48px;
+            line-height: 48px;
+            /* 100% */
+        }
+
+        &[data-order='2'] {
+            font-size: 36px;
+            line-height: 40px;
+            /* 100% */
+        }
+
+        &[data-order='3'] {
+            font-size: 30px;
+            line-height: 36px;
+            /* 100% */
+        }
+
+        &[data-order='4'] {
+            font-size: 24px;
+            line-height: 32px;
+            /* 100% */
+        }
+
+        &[data-order='5'] {
+            font-size: 20px;
+            line-height: 28px;
+            /* 100% */
+        }
+    }
+}
