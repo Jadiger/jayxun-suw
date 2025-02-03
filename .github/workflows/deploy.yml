@@ -1,0 +1,55 @@
+name: Frontend CI/CD Deployment
+
+on:
+  push:
+    branches:
+      - master  # Tek ǵana `master` branchtegi ózgerisler ushın isleydi
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      # 1. Repositorydi nusqalaw
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      # 2. Node.js ornatıw
+      - name: Set up Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: '22'  # Node.js versiyası
+          cache: 'npm'        # NPM cacheti jaǵıw
+
+      # 3. NPM qosımsha kitapxanalardı ornatıw
+      - name: Install dependencies
+        run: npm install
+
+      # 4. Proyektti build qılıw
+      - name: Build React app
+        run: npm run build
+
+      # 5. Serverge deploy qılıw
+      - name: Deploy to Server
+        env:
+          SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
+        run: |
+          # SSH arqalı jalǵanıw
+          mkdir -p ~/.ssh
+          echo "${{ secrets.SSH_PRIVATE_KEY }}" > ~/.ssh/id_rsa
+          chmod 600 ~/.ssh/id_rsa
+          ssh-keyscan -H 109.68.214.242 >> ~/.ssh/known_hosts
+
+          # Góne papkanı óshiriw
+          ssh -o StrictHostKeyChecking=no root@109.68.214.242 << 'EOF'
+            rm -rf /home/jayxun/frontend/dist || true
+          EOF
+
+          # Jańa build fayllardı serverge kóshiriw
+          scp -r dist root@109.68.214.242:/home/jayxun/frontend
+
+          # Nginxga fayllardı nusqalaw
+          ssh -o StrictHostKeyChecking=no root@109.68.214.242 << 'EOF'
+            sudo cp -r /home/jayxun/frontend/dist/* /var/www/html/
+            sudo systemctl restart nginx
+          EOF
