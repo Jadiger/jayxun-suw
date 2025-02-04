@@ -1,4 +1,5 @@
-import ClientCreate from '@/features/clients/ui/create'
+import ClientCreate from "@/ui/clients/create"
+
 
 const CreateClientPage = () => {
   return <ClientCreate />

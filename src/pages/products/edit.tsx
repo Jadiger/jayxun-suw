@@ -1,4 +1,4 @@
-import { ProductEdit } from '@/features/products/ui/product-edit'
+import { ProductEdit } from '@/ui/products/product-edit'
 
 const ProductEditPage = () => {
   return (

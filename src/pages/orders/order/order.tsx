@@ -1,4 +1,4 @@
-import { OrderInfo } from '@/features/orders/ui/order/ui/order-info/order-info'
+import { OrderInfo } from '@/ui/orders/order/ui/order-info/order-info'
 
 const OrderPage = () => {
   return <OrderInfo />

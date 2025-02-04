@@ -6,7 +6,7 @@ import { Drawer, Group, Stack, Title } from '@mantine/core'
 import { useDisclosure } from '@mantine/hooks'
 import { LanguageButton } from '@/shared/ui/language-button/language-button'
 import { Clipboard, Package, Truck, Users, Menu, X } from 'react-feather'
-import { Logout } from '@/features/auth/ui/logout'
+import { Logout } from '@/auth/ui/logout'
 
 interface ILinks {
   path: string

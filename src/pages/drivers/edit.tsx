@@ -1,10 +1,7 @@
-import { DriversEdit } from "@/features/drivers/ui/drivers-edit/drivers-edit"
-
+import { DriversEdit } from '@/ui/drivers/drivers-edit/drivers-edit'
 
 const DriverEditPage = () => {
-  return (
-    <DriversEdit/>
-  )
+  return <DriversEdit />
 }
 
 export default DriverEditPage

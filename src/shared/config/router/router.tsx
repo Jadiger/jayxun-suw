@@ -1,17 +1,15 @@
 import { lazy } from 'react'
 import { createBrowserRouter, defer } from 'react-router-dom'
 
-import { Auth } from '@/features/auth/ui/auth'
-import { ProtectedRoutes } from '@/features/auth/ui/protected-routes'
-import { AuthRoute } from '@/features/auth/ui/auth-route'
+import { Auth } from '@/auth/ui/auth'
+import { ProtectedRoutes } from '@/auth/ui/protected-routes'
+import { AuthRoute } from '@/auth/ui/auth-route'
 
-import { checkAuth } from '@/features/auth/utils/check-auth'
+import { checkAuth } from '@/auth/utils/check-auth'
 import { ROUTES } from '../../constants/routes'
 import { AuthLayout } from '@/shared/layouts/auth-layout/auth-layout'
 
 import { MainLayout } from '@/shared/layouts/main-layout/main-layout'
-
-
 
 const LoginPage = lazy(() => import('@/pages/auth/login'))
 
@@ -24,21 +22,15 @@ const OrdersClientCreate = lazy(
   () => import('@/pages/orders/orders-client-create/orders-client-create')
 )
 
-const CreateClientPage = lazy(
-  () => import('@/pages/clients/create')
-)
+const CreateClientPage = lazy(() => import('@/pages/clients/create'))
 const ClientsPage = lazy(() => import('@/pages/clients/clients'))
 const ClientPage = lazy(() => import('@/pages/clients/client'))
 const ClientEditPage = lazy(() => import('@/pages/clients/edit'))
 
 const ProductsPage = lazy(() => import('@/pages/products/products'))
 const ProductPage = lazy(() => import('@/pages/products/product'))
-const ProductCreatePage = lazy(
-  () => import('@/pages/products/create')
-)
-const ProductEditPage = lazy(
-  () => import('@/pages/products/edit')
-)
+const ProductCreatePage = lazy(() => import('@/pages/products/create'))
+const ProductEditPage = lazy(() => import('@/pages/products/edit'))
 const DriversPage = lazy(() => import('@/pages/drivers/drivers'))
 const DriverPage = lazy(() => import('@/pages/drivers/driver'))
 const DriversCreatePage = lazy(() => import('@/pages/drivers/create'))
@@ -68,9 +60,9 @@ export const router = createBrowserRouter([
                 element: <ProductsPage />,
               },
               {
-                path : ROUTES.DRIVERS,
-                element : <DriversPage/>
-              }
+                path: ROUTES.DRIVERS,
+                element: <DriversPage />,
+              },
             ],
           },
           {
@@ -111,17 +103,9 @@ export const router = createBrowserRouter([
             path: ROUTES.PRODUCTEDIT,
             element: <ProductEditPage />,
           },
-          { path : ROUTES.DRIVER,
-            element : <DriverPage/>
-          },
-          { path : ROUTES.DRIVERCREATE,
-            element : <DriversCreatePage/>
-          },
-          { path : ROUTES.DRIVEREDIT,
-            element : <DriverEditPage/>
-          },
-          
-
+          { path: ROUTES.DRIVER, element: <DriverPage /> },
+          { path: ROUTES.DRIVERCREATE, element: <DriversCreatePage /> },
+          { path: ROUTES.DRIVEREDIT, element: <DriverEditPage /> },
         ],
       },
 

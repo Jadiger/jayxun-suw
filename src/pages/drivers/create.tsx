@@ -1,10 +1,7 @@
-import { DriversCreate } from "@/features/drivers/ui/drivers-create"
-
+import { DriversCreate } from '@/ui/drivers/drivers-create'
 
 const DriversCreatePage = () => {
-  return (
-    <DriversCreate/>
-  )
+  return <DriversCreate />
 }
 
 export default DriversCreatePage

@@ -1,4 +1,4 @@
-import { ClientEdit } from '@/features/clients/ui/edit'
+import { ClientEdit } from '@/ui/clients/edit'
 
 const ClientEditPage = () => {
   return (

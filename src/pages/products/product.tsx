@@ -1,10 +1,7 @@
-import { ProductInfo } from "@/features/products/ui/product/product-info"
-
+import { ProductInfo } from '@/ui/products/product/product-info'
 
 const ProductPage = () => {
-  return (
-    <ProductInfo/>
-  )
+  return <ProductInfo />
 }
 
 export default ProductPage

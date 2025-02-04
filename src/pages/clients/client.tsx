@@ -1,12 +1,12 @@
-import { ClientInfo } from '@/features/clients/ui/client/client'
 import { PageHead } from '@/shared/ui/page-head/page-head'
+import { ClientInfo } from '@/ui/clients/client/client'
 import { ActionIcon } from '@mantine/core'
 
 import { Edit2 } from 'react-feather'
 import { Link, useParams } from 'react-router-dom'
 
 const ClientPage = () => {
-  const {id} = useParams()
+  const { id } = useParams()
   return (
     <>
       <PageHead

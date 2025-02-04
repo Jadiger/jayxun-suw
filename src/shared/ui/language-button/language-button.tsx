@@ -2,7 +2,7 @@ import style from './language-button.module.css'
 
 import { useState } from 'react'
 import RusIcon from '/public/Rus.svg'
-import { ILanguage } from '@/features/auth/types/language'
+import { ILanguage } from '@/auth/types/language'
 export function LanguageButton() {
   const [selectLanguage, setSelectLanguage] = useState<string>('ru')
 

@@ -1,5 +1,5 @@
-import { NewClientOrder } from '@/features/orders/ui/create-order/new-client/new-client-order'
-import NewOrderForBaseClient from '@/features/orders/ui/create-order/order-for-base-client/order-base-client'
+import { NewClientOrder } from '@/ui/orders/create-order/new-client/new-client-order'
+import NewOrderForBaseClient from '@/ui/orders/create-order/order-for-base-client/order-base-client'
 
 import { PageHead } from '@/shared/ui/page-head/page-head'
 import { SegmentedControl } from '@mantine/core'

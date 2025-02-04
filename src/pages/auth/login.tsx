@@ -1,4 +1,4 @@
-import { LoginForm } from '@/features/auth/ui/login-form'
+import { LoginForm } from '@/auth/ui/login-form'
 import { Stack, Title } from '@mantine/core'
 import styles from './login.module.css'
 

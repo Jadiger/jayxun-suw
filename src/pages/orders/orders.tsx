@@ -1,9 +1,10 @@
-import { NewOrdersList } from '@/features/orders/ui/new-orders-list/new-orders-list'
+
 import { SegmentedControl, Stack } from '@mantine/core'
 import { useState } from 'react'
 
-import { AllOrders } from '@/features/orders/ui/all-orders/all-orders'
+import { AllOrders } from '@/ui/orders/all-orders/all-orders'
 import { CreateButton } from '@/shared/ui/create-button/create-button'
+import { NewOrdersList } from '@/ui/orders/new-orders-list/new-orders-list'
 
 function OrdersPage() {
   const [status, setStatus] = useState('new')

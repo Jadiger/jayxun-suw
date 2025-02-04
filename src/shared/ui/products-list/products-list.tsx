@@ -1,4 +1,4 @@
-import { IOrderProductWithCount } from '@/features/orders/types/orders'
+import { IOrderProductWithCount } from '@/types/orders'
 import { Center, Divider, Group, Loader, Stack, Title } from '@mantine/core'
 import { Fragment } from 'react/jsx-runtime'
 import style from './product-list.module.css'
