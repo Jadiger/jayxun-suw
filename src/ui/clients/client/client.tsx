@@ -13,7 +13,7 @@ import { Map, Phone } from 'react-feather'
 
 import { Link, useParams } from 'react-router-dom'
 import { useState } from 'react'
-import MapWithRouting from '@/shared/ui/map-with-routing/map-with-routing'
+import {GoogleMapsEmbed} from '@/shared/ui/google-maps/google-maps'
 import { ProductsListComponent } from '@/shared/ui/products-list/products-list'
 import { IOrderProductWithCount } from '@/types/orders'
 import { Product } from '@/types/products'
@@ -110,9 +110,9 @@ export const ClientInfo = () => {
           </div>
 
           {mapRouting && (
-            <MapWithRouting
-              lat={Number(client?.latitude)}
-              lng={Number(client?.longitude)}
+            <GoogleMapsEmbed
+              lat={client?.latitude}
+              lng={client?.longitude}
             />
           )}
           <ProductsListComponent

@@ -18,11 +18,14 @@ import { useFetchOrder } from '@/queries/orders-queries'
 import { Link, useParams } from 'react-router-dom'
 import { PageHead } from '@/shared/ui/page-head/page-head'
 import { ProductsListComponent } from '@/shared/ui/products-list/products-list'
+import ClientInfoBlock from '@/shared/ui/client-info/client-info'
+import { useState } from 'react'
+import { GoogleMapsEmbed } from '@/shared/ui/google-maps/google-maps'
 
 export const OrderInfo = () => {
   const { id } = useParams()
   const { data, isLoading, isSuccess } = useFetchOrder(Number(id))
-  console.log(data)
+  const [mapRouting, setMapRouting] = useState(false)
 
   const products = data?.products.reduce<IOrderProductWithCount[]>(
     (acc, item) => {
@@ -93,16 +96,18 @@ export const OrderInfo = () => {
                     <ClientInfo title="Адрес" info={data?.client.streetName} />
                   )}
 
-                  {data?.client.latitude && data.client.longitude && (
-                    <ClientInfo
+                  {data?.client.latitude && data?.client.longitude && (
+                    <ClientInfoBlock
                       title="Адрес"
-                      info={data?.client.streetName}
+                      info={data.client.streetName || ''}
                       render={
                         <ActionIcon
+                          radius={'50%'}
                           p={8}
-                          w={32}
-                          h={32}
-                          style={{ borderRadius: '50%' }}
+                          size={32}
+                          onClick={() => {
+                            setMapRouting(true)
+                          }}
                         >
                           <Map size={24} />
                         </ActionIcon>
@@ -245,6 +250,12 @@ export const OrderInfo = () => {
                 lng={data?.client.longitude}
                 clientId={data.client.id}
                 id={data.id}
+              />
+            )}
+            {mapRouting && (
+              <GoogleMapsEmbed
+                lat={data?.client.latitude}
+                lng={data?.client.longitude}
               />
             )}
           </Fragment>
